@@ -1,0 +1,226 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: auto;
+    /* background-color:black; */
+    background-image: linear-gradient(to right, #cc2b5e  , #753a88);
+    /* background-image: */
+    /* radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), */
+    /* radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), */
+    /* radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), */
+    /* radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px); */
+    /* background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;  */
+    /* background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
+}
+.header{
+    /* top: 0px; */
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    margin: auto;
+    width: 50vw;
+    height: 60px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    /* visibility: hidden; */
+    position:sticky;
+    top: 0px;
+    z-index: 1000;
+}
+.hide{
+    visibility: hidden;
+}
+.nav .nav-image img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.container{
+    margin-top: 20px;
+    /* background-color: red; */
+    margin: auto;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.right{
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    /* background-color: red; */
+}
+.copy-to-clipboard-icon{
+    width: 50px;
+    height: 50px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.profile-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* background-color: red; */
+}
+.about-profile img{
+    width: 100px;
+    height: 100px;
+    image-resolution: from-image 300dpi;
+    border-radius: 50%;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name a{
+    text-decoration: none;
+    color: navy;
+
+}
+.name a:hover{
+    color: black;
+}
+
+.all-links{
+    width: 100%;
+    margin-top: 20px;
+    /* background-color: red; */
+
+}
+.link-container{
+
+    width: 90%;
+    margin: auto;
+    /* background-color: red; */
+}
+.link{
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* background-color: red; */
+    margin: auto;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    transform: scale(1.05);
+    transition: 1000ms;
+} 
+.all-links .link-icon img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    margin-left: 4px;
+    height: 40px;
+    border-radius: 5%;
+    /* background-color: blue; */
+}
+.copy-to-clipboard-icon-link{
+    width: 30px;
+    visibility: hidden;
+}
+.copy-to-clipboard-icon , .copy-to-clipboard-icon-link{
+    cursor: pointer;
+}
+.link:hover .copy-to-clipboard-icon-link{
+    visibility: visible;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.typewriter h3 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 5s steps(100, end) infinite,
+        blink-caret .75s step-end;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .name h4{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3s steps(100, end) reverse,
+        blink-caret .75s step-end;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    /* 50% { border-color: orange; } */
+  }
+
+
+@media screen and (max-width:768px) {
+    .all-links{
+        /* background-color: red; */
+        width: 100vw;
+    }
+    .link{
+        font-size: 3vw;
+        width: 98%;
+    }
+}
