@@ -223,4 +223,7 @@ body{
         font-size: 3vw;
         width: 98%;
     }
+    .nav{
+        width:80vw;
+    }
 }
