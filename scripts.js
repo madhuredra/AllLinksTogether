@@ -74,7 +74,7 @@ let link_container = document.getElementById('link-container');
 link_container.innerHTML = links.map(_link => {                               
     return (
         `   
-        <div  key=${_link._id}>
+        <div  key=${_link._id} class="tilt">
             <a class="link" href=${_link.link} target="_blank" rel="noopener noreferrer">
                 <div class="link-icon">
                     <img src=${_link.icon} alt="logo" srcset="">
@@ -118,3 +118,30 @@ window.addEventListener('scroll', () => {
         }
     }
 })
+
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
+ reverse:                false,  
+    max:                    15,     
+    startX:                 0,      
+    startY:                 0,      
+    perspective:            1000,   
+    scale:                  1,      
+    speed:                  300,    
+    transition:             true,   
+    axis:                   null,   
+    reset:                  true,   
+    "reset-to-start":       true,   
+    easing:                 "cubic-bezier(.03,.98,.52,.99)",    
+    glare:                  false,  
+    "max-glare":            1,      
+    "glare-prerender":      false,  
+                                    
+    "mouse-event-element":  null,   
+    "full-page-listening":  false,  
+    gyroscope:              true,   
+    gyroscopeMinAngleX:     -45,    
+    gyroscopeMaxAngleX:     45,     
+    gyroscopeMinAngleY:     -45,    
+    gyroscopeMaxAngleY:     45,     
+    gyroscopeSamples:       10      
+});
